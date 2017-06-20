@@ -104,9 +104,9 @@ var strings = ['1','12','4','18','9','7','11','3','101','5','6'];
 
 function reverseArray(arrayToReverse){
 
-  var reservedAray = [];
+  var reversedAray = [];
 
-  for (var i = 11; i < arrayToReverse.length; i--) {
+  for (var i = 11; i < arrayToReverse.length - 1; i--) {
     arrayToReverse[i]
   }
 
@@ -177,13 +177,14 @@ console.assert(numbersOverX(numbers, 15).toString() === "18,101", {'message': 'n
 // listed after the contents of the first array
 var numbers = [1,12,4,18,9,7,11,3,101,5,6];
 var numbersTwo = [33,56,72,2,5,66,90,21,42];
-// A:var joinArrays  = function([amount1, amount2]){
+
+var joinArrays  = function([amount1, amount2]){
   var bothArrays = amount1;
   for (var i = 0; i < amount2.length; i++) {
     bothArrays.push(amount2[i]);
   }
   //console.log(bothArrays);
-  return bothArrays
+  return bothArrays;
 }
 
 
