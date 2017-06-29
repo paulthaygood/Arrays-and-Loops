@@ -90,7 +90,7 @@ function getEvens(arrNum){
 }
 
 
-console.assert(getEvens(numbers).toString() === '12,4,18,6', {'message': 'getEvens should return "12,4,18,6"'});
+console.assert(getEvens(numbers).toString()) === '12,4,18,6', {'message': 'getEvens should return "12,4,18,6"'});
 
 
 // 5.
@@ -113,7 +113,6 @@ function reverseArray(arrayToReverse){
   return reversedArray;
 }
 
-console.assert(arrayReverser(numbers).toString() === '6,5,101,3,11,7,9,18,4,12,1', {'message': 'arrayReverser should return "6,5,101,3,11,7,9,18,4,12,1"'});
 
 
 // 6.
@@ -158,8 +157,9 @@ console.assert(numbersOver10(numbers).toString() === "12,18,11,101", {'message':
 // 8.
 // Write a function that accepts both an array and number argument
 // and returns an array of only the numbers greater than the number passed to the function
-// A:var numbersOverX = function(array, amount){
-  var greaterNum = [];
+A:
+var numbersOverX = function(array, amount){
+var greaterNum = [];
   for (var i = 0; i < array.length; i++) {
     if (array[i] > amount){
         greaterNum.push(array[i]);
@@ -206,16 +206,16 @@ var instructors = [
 
 var instructorNameDiscipline = instructors[5];
 // greenvIlleInstructor = <your answer>
-['Will', 'JavaScript']
+// ['Will', 'JavaScript']
 
 var instructorOne = instructors[4][0];
 // instructorOne = <your answer>
-['Dan', 'JavaScript'] ['JD', 'JavaScript']
+// ['Dan', 'JavaScript'] ['JD', 'JavaScript']
 
 var instructorTwo = instructors[0][1];
 // instructorTwo = <your answer>
-['JD', 'Javascript'] ['Tim', 'Javascript']
+// ['JD', 'Javascript'] ['Tim', 'Javascript']
 
 var instructorThree = instructors[2][0];
 // instructorThree = <your answer>
-['Brit', 'Ruby'] ['JD', 'Javascript']
+// ['Brit', 'Ruby'] ['JD', 'Javascript']
